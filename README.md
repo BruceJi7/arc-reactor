@@ -6,7 +6,9 @@ This tool positions images on an arc.
 
 ```ts
 interface ArcProps{
-    imgSrc:string, className:string, howMany:number, boxHeight:number, boxWidth:number, angleCorrection?:number, heightCorrection?:number, widthCorrection?:number
+    imgSrc:string, className:string, howMany:number, 
+    boxHeight:number, boxWidth:number, 
+    angleCorrection?:number, heightCorrection?:number, widthCorrection?:number
   }
 
   makeArc({...});
@@ -24,5 +26,6 @@ interface ArcProps{
 | widthCorrection?  	| number 	| To correct the horizontal position of the arc        	|
 
 [0] The arc is positioned using relative/absolute, and top/left. _The parent box must be position relative_.
+
 [1] This value represents degrees going _clockwise_ that the arc should start from.
 
